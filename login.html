@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		function validacao(){
+			var login = form.login.value;
+			var senha = form.senha.value;
+			if (login == ""){
+                alert('Login não preenchido');
+                form.login.focus();
+                return false;
+            }
+            if (senha == ""){
+                alert('Senha não preenchida');
+                form.senha.focus();
+                return false;
+            }
+
+		}
+	</script>
+</head>
+
+<body>
+	<div class="button">
+		<h1>
+	        <a href="index.html">Home</a>			
+		</h1>
+    </div>
+	<form action="login.php" method="POST">
+		Login: <input type="text" name="login" id="login"> <br>
+		Senha: <input type="password" name="senha" id="senha" minlength="6" maxlength="8"> <br>
+		<input type="submit" name="entrar" id="entrar" value="Acessar" onclick="return validacao()">
+		<input type="reset" value="Limpar"> <br><br>
+		<h5>Não registrado?<a href="cadastro.html" class="subl"> Clique aqui</a></h5>
+		<h5>Deseja alterar seus dados? <a href="alterar.php" class="subl"> Clique Aqui</a></h5>
+		<h6>Deseja excluir seus dados? <a href="excluir.php" class="subl"> Clique Aqui</a></h6>
+		</form> 
+
+</body>
+</html>

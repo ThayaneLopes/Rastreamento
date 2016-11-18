@@ -1,0 +1,230 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-image: url("img/download.png");
+	width: 100%;
+}
+
+h1, h2, h5, h6, p, form, input, a{
+	font-family: 'Roboto', sans-serif;
+} 
+
+
+/* CSS BANNER */
+ 
+#banner #banner_img {
+	/*width: 100vw 900px; */
+	height: 100vh /* 300px */;
+}
+ 
+#banner a {
+	border: solid 1px #333;
+	background-color: #F7F7F7;
+	padding: 2px 10px;
+	text-decoration: none;
+	color: #000;
+    margin: 0 5px;
+    border-radius: 100%;
+}
+ 
+	#banner a:hover {
+		border: solid 1px #333;
+		text-decoration: underline;
+		background-color: #333;
+		color: #FFF;
+	}
+	
+	#banner a.hover {
+		background-color: #333;
+		color: #FFF;
+	}
+	
+#banner #botoes {
+	/* width: 900px;*/
+	text-align: center; 
+	width: 50vw;
+    margin-left: 25vw;
+    margin-top: -50px;
+    position: absolute;
+}
+ 
+#banner #botoes {
+	padding-top: 5px;
+}
+/* Drop Down Menu  */
+#nav {
+float: left;
+margin-left:0px;
+margin-top:-0px;
+margin-bottom:7px;
+font:normal bold 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+overflow: hidden;
+width: 1040px;
+background: transparent;
+z-index: 10;
+position: absolute;
+}
+#nav ul {
+margin: 0;
+padding: 0;
+list-style: none;
+z-index: 10;
+}
+#nav ul li {
+float: left;
+}
+#nav ul li a {
+float: left;
+color:#0000CD;
+padding: 10px 20px;
+text-decoration: none;
+background:#fff;
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 0 5px rgba(0, 0, 0, 0.1) inset;
+text-shadow: 0 -1px 1px #ccc;
+}
+
+#nav ul li a:hover,
+#nav ul li:hover > a {
+color:#000000;
+background:#fff;
+text-shadow:none;
+}
+#nav li ul a:hover,
+#nav ul li li:hover > a {
+color:#000000;
+background: #f4f6f7;
+border-bottom: 1px solid #fff;
+border-top: 1px solid #fff;
+text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+}
+
+#nav li ul {
+background: #DCDCDC;
+left: -999em;
+margin: 35px 0 0;
+/* position: absolute; */
+position: fixed;
+width: 170px;
+z-index: 500;
+}
+#nav li:hover ul {
+left: auto;
+}
+#nav li ul a {
+background: none;
+border: 0 none;
+margin-right: 0;
+width: 140px;
+box-shadow: none;
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+border-bottom: 1px solid transparent;
+border-top: 1px solid transparent;
+}
+.nav ul li ul {
+position: absolute;
+left: 0;
+display: none;
+visibility: hidden;
+}
+.nav ul li ul li {
+display: list-item;
+float: none;
+}
+.nav ul li ul li ul {
+top: 0;
+}
+.nav ul li ul li a {
+font: normal 13px Verdana;
+width: 160px;
+padding: 5px;
+margin: 0;
+border-top-width: 0;
+border-bottom: 1px solid gray;
+}
+#nav li li ul {
+margin: -1px 0 0 160px;
+visibility: hidden;
+}
+#nav li li:hover ul {
+visibility: visible;
+}
+
+/******** CSS DO FORMULARIO ********/
+
+.button > h1{
+	margin: -18px -13px;
+}
+
+.button > h1 > a{
+	text-decoration: none;
+}
+
+form{
+	text-align: center;
+	background-color: white;
+	border-radius: 14px 45px 30px 30px;
+	margin: 11% 10% 10% 35%;
+	padding: 20px;
+	/* height: 10%; */
+	width: 30%;
+	border-style: solid;
+	border-color: #000;
+	
+}
+
+form > h1{
+	margin-bottom: 10px;
+}
+
+form > input{
+	height: 25px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+
+form > center > textarea{
+	height: 70px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+
+h3{
+	color: red;
+	text-align: center;
+}
+
+fieldset{
+	text-align: center;
+}
+
+a{
+	color: black;
+}
+
+.button{
+	border-radius: 15px 50px 30px;
+	background-color: white;
+	margin: 25px ;
+	padding: 35px;
+	height: 5px;
+	width: 53px;
+	border-style: solid;
+	border-color: #000;
+}
+
+.subl{
+	color: #aaafff;
+}
+
+p{
+	text-align: center;
+}
+h1{
+	color: red;
+}
+label > h1{
+	color:  #000;
+}
