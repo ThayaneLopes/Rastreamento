@@ -6,8 +6,9 @@ $senha = $_POST['senha'];
 $id;
 
 
-$connect = mysql_connect('localhost','root');
+$connect = mysql_connect('localhost','root',"@luno1fpe");
 $db = mysql_select_db('elsez');
+
 if (isset($entrar)) {
 
     $verifica = mysql_query("select * FROM usuario WHERE login = '$login' AND senha = '$senha'") or die("erro ao selecionar");

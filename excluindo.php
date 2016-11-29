@@ -1,5 +1,5 @@
 <?php 
-$connect = mysql_connect('localhost');
+$connect = mysql_connect('localhost','root',"@luno1fpe");
 $db = mysql_select_db('elsez');
 
 $id = $_POST["id"];

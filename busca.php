@@ -5,7 +5,7 @@ $user = 'root';
 $pass = '@luno1fpe';
 $con = mysql_connect($host,$user,$pass); 
 $db = 'Elsez';*/
-$connect = mysql_connect('localhost');
+$connect = mysql_connect('localhost','root',"@luno1fpe");
 $db = mysql_select_db('elsez');
 
 $busca = $_POST['busca'];

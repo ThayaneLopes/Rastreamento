@@ -9,7 +9,7 @@ date_default_timezone_set('America/Recife');
 $dataHora = date('Y/m/d H:i:s', time());
 $timezone = date_default_timezone_get();
 
-$connect = mysql_connect('localhost','root');
+$connect = mysql_connect('localhost','root',"@luno1fpe");
 $db = mysql_select_db('elsez');
 $sql = "update usuario SET logout='$dataHora' WHERE id='$id'";
 
